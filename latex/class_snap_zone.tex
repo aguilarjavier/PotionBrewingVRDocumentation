@@ -1,0 +1,84 @@
+\hypertarget{class_snap_zone}{}\doxysection{Snap\+Zone Class Reference}
+\label{class_snap_zone}\index{SnapZone@{SnapZone}}
+
+
+Handles the snapping of one or more gameobjects into a gameobject. Used to snap flowers in mortar, and potions in turn in table.   
+
+
+Inheritance diagram for Snap\+Zone\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_snap_zone}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_snap_zone_a6747ed88b5b73d2b0278183221712642}\label{class_snap_zone_a6747ed88b5b73d2b0278183221712642}} 
+void {\bfseries Clear\+Snapped} ()
+\begin{DoxyCompactList}\small\item\em Clears the state of the component, called by the Potion\+Validation script once the potion is destroyed.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_snap_zone_a6ef7faaf1d9b73617cf54fc19c6598af}\label{class_snap_zone_a6ef7faaf1d9b73617cf54fc19c6598af}} 
+bool {\bfseries snapped}
+\item 
+\mbox{\Hypertarget{class_snap_zone_ab26a5a62ed289f8ab685c40a53b23532}\label{class_snap_zone_ab26a5a62ed289f8ab685c40a53b23532}} 
+bool {\bfseries grab\+After}
+\item 
+\mbox{\Hypertarget{class_snap_zone_a2e78ab85689dc5a6ebe07a7eb9e335e8}\label{class_snap_zone_a2e78ab85689dc5a6ebe07a7eb9e335e8}} 
+string {\bfseries id\+To\+Snap}
+\item 
+\mbox{\Hypertarget{class_snap_zone_a0c350b78b0aab3ee1e56f1fcd951a77a}\label{class_snap_zone_a0c350b78b0aab3ee1e56f1fcd951a77a}} 
+Interactable {\bfseries interactable}
+\item 
+\mbox{\Hypertarget{class_snap_zone_af970b48fe98edb9fddbbb720e1d08c8e}\label{class_snap_zone_af970b48fe98edb9fddbbb720e1d08c8e}} 
+bool {\bfseries grabbed}
+\item 
+\mbox{\Hypertarget{class_snap_zone_ad7907c4ffa8e5c2b72786b81dedca27b}\label{class_snap_zone_ad7907c4ffa8e5c2b72786b81dedca27b}} 
+bool {\bfseries in\+Snap\+Zone}
+\item 
+\mbox{\Hypertarget{class_snap_zone_a8f0668d251155cd7a5ff99666037e26a}\label{class_snap_zone_a8f0668d251155cd7a5ff99666037e26a}} 
+Transform\mbox{[}$\,$\mbox{]} {\bfseries offsets}
+\item 
+\mbox{\Hypertarget{class_snap_zone_ad7e8a65d248215177af8ae4bcb975f51}\label{class_snap_zone_ad7e8a65d248215177af8ae4bcb975f51}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries snapped\+Objects}
+\item 
+\mbox{\Hypertarget{class_snap_zone_a73eeea0de206a9720232df0246b9e671}\label{class_snap_zone_a73eeea0de206a9720232df0246b9e671}} 
+int {\bfseries snapped\+Count}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_snap_zone_a61dc516edcc43a055c78eb01793fad1e}\label{class_snap_zone_a61dc516edcc43a055c78eb01793fad1e}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_snap_zone_a75fb4ad85af836dc5b71ca5f79f10bf9}\label{class_snap_zone_a75fb4ad85af836dc5b71ca5f79f10bf9}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_snap_zone_a3f43d654f46d73ccbb30d61a4da117fe}\label{class_snap_zone_a3f43d654f46d73ccbb30d61a4da117fe}} 
+void {\bfseries On\+Disable} ()
+\begin{DoxyCompactList}\small\item\em Resets the state of the script when it is disable.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snap_zone_aff82d72cac552703032a5f28d26cb202}\label{class_snap_zone_aff82d72cac552703032a5f28d26cb202}} 
+void {\bfseries Snap\+Object} ()
+\begin{DoxyCompactList}\small\item\em Snaps an object according to the amount of objects to snap. If only one object then its position is set to the current gameobjects postions. If more than one then position will go into offsets array postions.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snap_zone_abe28c19c3b331636eb812d6ef0941d8f}\label{class_snap_zone_abe28c19c3b331636eb812d6ef0941d8f}} 
+void {\bfseries On\+Trigger\+Enter} (Collider other)
+\item 
+\mbox{\Hypertarget{class_snap_zone_aac516a0bb121965e29579a017d3e297f}\label{class_snap_zone_aac516a0bb121965e29579a017d3e297f}} 
+void {\bfseries On\+Trigger\+Exit} (Collider other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_snap_zone_aebd534e7774a23ad57fd581c97fd9601}\label{class_snap_zone_aebd534e7774a23ad57fd581c97fd9601}} 
+Unity\+Event {\bfseries events}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the snapping of one or more gameobjects into a gameobject. Used to snap flowers in mortar, and potions in turn in table.  
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/Snap\+Zone.\+cs\end{DoxyCompactItemize}

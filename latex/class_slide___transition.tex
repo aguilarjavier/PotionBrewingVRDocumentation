@@ -1,0 +1,86 @@
+\hypertarget{class_slide___transition}{}\doxysection{Slide\+\_\+\+Transition Class Reference}
+\label{class_slide___transition}\index{Slide\_Transition@{Slide\_Transition}}
+
+
+Creates a looping 2D Animation on a Canvas by enabling/disabling the child gameobjects placed in an array.   
+
+
+Inheritance diagram for Slide\+\_\+\+Transition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_slide___transition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_slide___transition_a97ed6782f9debe854e90ababbd4b41ed}\label{class_slide___transition_a97ed6782f9debe854e90ababbd4b41ed}} 
+float {\bfseries m\+\_\+\+Delay\+In\+Seconds} = 1.\+0f
+\item 
+\mbox{\Hypertarget{class_slide___transition_a98df90368ef9589f0a05014330b024b2}\label{class_slide___transition_a98df90368ef9589f0a05014330b024b2}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Panels}
+\item 
+\mbox{\Hypertarget{class_slide___transition_a1895f66945248cc4ac8ac3f4476cd26d}\label{class_slide___transition_a1895f66945248cc4ac8ac3f4476cd26d}} 
+Game\+Object {\bfseries m\+\_\+\+Ref\+Area}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_slide___transition_a373c7559ed8e014893079995043a43db}\label{class_slide___transition_a373c7559ed8e014893079995043a43db}} 
+void {\bfseries On\+Enable} ()
+\item 
+\mbox{\Hypertarget{class_slide___transition_af5fc1564e51d2abba777083933704a38}\label{class_slide___transition_af5fc1564e51d2abba777083933704a38}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_slide___transition_a58ae76e11875e9835638d59a5a63c7b6}\label{class_slide___transition_a58ae76e11875e9835638d59a5a63c7b6}} 
+void {\bfseries Update} ()
+\item 
+IEnumerator \mbox{\hyperlink{class_slide___transition_a760112541316302ef58bf6687c92c4c7}{Time\+Delay}} ()
+\begin{DoxyCompactList}\small\item\em Transitions from one child game object to the next over over a specific time.  \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_slide___transition_a13c792a563fb5ea6d06a5d3a4186d004}{Reset\+Slides}} ()
+\begin{DoxyCompactList}\small\item\em Resets every back to the first child gameobject in the array.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_slide___transition_a8fb8f496b15d31b4309c417375ba021a}\label{class_slide___transition_a8fb8f496b15d31b4309c417375ba021a}} 
+bool {\bfseries loop\+On} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a looping 2D Animation on a Canvas by enabling/disabling the child gameobjects placed in an array.  
+
+Placement of each child gameobject is critical. Animation will start with first item array and then the next. Will then loop once it finishes with the last item. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slide___transition_a13c792a563fb5ea6d06a5d3a4186d004}\label{class_slide___transition_a13c792a563fb5ea6d06a5d3a4186d004}} 
+\index{Slide\_Transition@{Slide\_Transition}!ResetSlides@{ResetSlides}}
+\index{ResetSlides@{ResetSlides}!Slide\_Transition@{Slide\_Transition}}
+\doxysubsubsection{\texorpdfstring{ResetSlides()}{ResetSlides()}}
+{\footnotesize\ttfamily IEnumerator Slide\+\_\+\+Transition.\+Reset\+Slides (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resets every back to the first child gameobject in the array.  
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slide___transition_a760112541316302ef58bf6687c92c4c7}\label{class_slide___transition_a760112541316302ef58bf6687c92c4c7}} 
+\index{Slide\_Transition@{Slide\_Transition}!TimeDelay@{TimeDelay}}
+\index{TimeDelay@{TimeDelay}!Slide\_Transition@{Slide\_Transition}}
+\doxysubsubsection{\texorpdfstring{TimeDelay()}{TimeDelay()}}
+{\footnotesize\ttfamily IEnumerator Slide\+\_\+\+Transition.\+Time\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transitions from one child game object to the next over over a specific time.  
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/Slide\+\_\+\+Transition.\+cs\end{DoxyCompactItemize}

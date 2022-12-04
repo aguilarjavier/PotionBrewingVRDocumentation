@@ -1,0 +1,69 @@
+\hypertarget{class_pour_detector}{}\doxysection{Pour\+Detector Class Reference}
+\label{class_pour_detector}\index{PourDetector@{PourDetector}}
+
+
+Initiate pour effect on bottle. Calls \mbox{\hyperlink{class_stream}{Stream}} script that assign a stream prefab to know when to start or end pour.   
+
+
+Inheritance diagram for Pour\+Detector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pour_detector}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pour_detector_acfc1d66c225422ab4de81027337e642e}\label{class_pour_detector_acfc1d66c225422ab4de81027337e642e}} 
+void {\bfseries End\+Pour\+Override} ()
+\begin{DoxyCompactList}\small\item\em Immediately stops pouring of stream.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pour_detector_a9dce8269b5cf2f82031d2fe334d684de}\label{class_pour_detector_a9dce8269b5cf2f82031d2fe334d684de}} 
+int {\bfseries pour\+Threshhold} = 45
+\item 
+\mbox{\Hypertarget{class_pour_detector_a6410ca6ffcee0d28d4aea7ce023bc7d7}\label{class_pour_detector_a6410ca6ffcee0d28d4aea7ce023bc7d7}} 
+Transform {\bfseries origin} = null
+\item 
+\mbox{\Hypertarget{class_pour_detector_ae8f73a865120f9ecb583e643d614ecb5}\label{class_pour_detector_ae8f73a865120f9ecb583e643d614ecb5}} 
+Game\+Object {\bfseries stream\+Prefab} = null
+\item 
+\mbox{\Hypertarget{class_pour_detector_a027e7a6713de8aee8b602d1aaa0d8b88}\label{class_pour_detector_a027e7a6713de8aee8b602d1aaa0d8b88}} 
+bool {\bfseries is\+Pouring} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pour_detector_a10758520fe85ae28281e28e820056d88}\label{class_pour_detector_a10758520fe85ae28281e28e820056d88}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_pour_detector_abde3e6ea85d6bba61c0cb5dc811deffb}\label{class_pour_detector_abde3e6ea85d6bba61c0cb5dc811deffb}} 
+void {\bfseries Start\+Pour} ()
+\begin{DoxyCompactList}\small\item\em Function to start pour and call the stream to begin.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pour_detector_ad7ad4e501d63f04b0c9c5855347d3c1c}\label{class_pour_detector_ad7ad4e501d63f04b0c9c5855347d3c1c}} 
+void {\bfseries End\+Pour} ()
+\begin{DoxyCompactList}\small\item\em Function to end pour if bottle not tilted. Stops stream from pouring.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pour_detector_a0f2a10f7331040df7cdb9268273e4d68}\label{class_pour_detector_a0f2a10f7331040df7cdb9268273e4d68}} 
+float {\bfseries Calculate\+Pour\+Angle} ()
+\begin{DoxyCompactList}\small\item\em Calculating pour angle.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pour_detector_af87c6af8b79b99d6191c0e89dec9d8bf}\label{class_pour_detector_af87c6af8b79b99d6191c0e89dec9d8bf}} 
+\mbox{\hyperlink{class_stream}{Stream}} {\bfseries Create\+Stream} ()
+\begin{DoxyCompactList}\small\item\em Create stream. Read component from \mbox{\hyperlink{class_stream}{Stream}} script.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pour_detector_ac73f7c35cfec856123a09e649e0bf92c}\label{class_pour_detector_ac73f7c35cfec856123a09e649e0bf92c}} 
+\mbox{\hyperlink{class_stream}{Stream}} {\bfseries current\+Stream} = null
+\item 
+\mbox{\Hypertarget{class_pour_detector_aefe168ab4db3d0cf1c75ba60acea7b9f}\label{class_pour_detector_aefe168ab4db3d0cf1c75ba60acea7b9f}} 
+bool {\bfseries stop\+Pouring} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Initiate pour effect on bottle. Calls \mbox{\hyperlink{class_stream}{Stream}} script that assign a stream prefab to know when to start or end pour.  
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/Pour\+Detector.\+cs\end{DoxyCompactItemize}

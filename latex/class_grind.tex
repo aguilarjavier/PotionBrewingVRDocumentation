@@ -1,0 +1,105 @@
+\hypertarget{class_grind}{}\doxysection{Grind Class Reference}
+\label{class_grind}\index{Grind@{Grind}}
+
+
+Handles the flower grinding logic and interaction between the mortar and pestle gameobjects.   
+
+
+Inheritance diagram for Grind\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_grind}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grind_a680d10e37be55ccafada0b06afef9f88}\label{class_grind_a680d10e37be55ccafada0b06afef9f88}} 
+void {\bfseries New\+Flower} ()
+\begin{DoxyCompactList}\small\item\em Resets the current grind amount and increments the flower count.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grind_a46a8e8d40575f157eed08a6f80d8b4e4}\label{class_grind_a46a8e8d40575f157eed08a6f80d8b4e4}} 
+\mbox{\hyperlink{class_tuple}{Tuple}}\mbox{[}$\,$\mbox{]} {\bfseries Pairs}
+\item 
+\mbox{\Hypertarget{class_grind_a77a59671196e1a666a4f70d5f1d698bf}\label{class_grind_a77a59671196e1a666a4f70d5f1d698bf}} 
+Game\+Object {\bfseries place\+Collider}
+\item 
+\mbox{\Hypertarget{class_grind_a6c113aaed3b763a782917917d5f2dc55}\label{class_grind_a6c113aaed3b763a782917917d5f2dc55}} 
+int {\bfseries target\+Int} = 50
+\item 
+\mbox{\Hypertarget{class_grind_ad6b2dde44daee31604e04e2f7c23e43b}\label{class_grind_ad6b2dde44daee31604e04e2f7c23e43b}} 
+int {\bfseries current}
+\item 
+\mbox{\Hypertarget{class_grind_ae3beee544d71d49f6f55009c930c28db}\label{class_grind_ae3beee544d71d49f6f55009c930c28db}} 
+int {\bfseries flower\+Count}
+\item 
+\mbox{\Hypertarget{class_grind_ac2bf127886138147f72b86c9d1fcce24}\label{class_grind_ac2bf127886138147f72b86c9d1fcce24}} 
+bool {\bfseries squished}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grind_a554a7e8485a1918abdab991058b191c9}\label{class_grind_a554a7e8485a1918abdab991058b191c9}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_grind_acc49499e824ce1cdf89030121a3c6f35}\label{class_grind_acc49499e824ce1cdf89030121a3c6f35}} 
+void {\bfseries Adjust\+Flowers} ()
+\item 
+void \mbox{\hyperlink{class_grind_a4310df749381d87472b66159dd80a7da}{Grind\+Flowers}} (Game\+Object flower)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_grind}{Grind}} logic when there is only one flower in the mortar.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grind_a1e29c952e0dae6c5cae9a9e83ac4e6f0}{Grind\+Flowers}} (Game\+Object flower1, Game\+Object flower2)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_grind}{Grind}} logic when two flowers in the mortar.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grind_aa17d29fd26ceb1c064c3ddb1a7a0c463}\label{class_grind_aa17d29fd26ceb1c064c3ddb1a7a0c463}} 
+void {\bfseries On\+Disable} ()
+\begin{DoxyCompactList}\small\item\em Resets the state of the grind script once it is disabled.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grind_a767632a3ff4930100ebe70613dcc922c}\label{class_grind_a767632a3ff4930100ebe70613dcc922c}} 
+void {\bfseries Squish} ()
+\begin{DoxyCompactList}\small\item\em Adjusts the scale of the flowers when grinding is half way through for squished flowers affect.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grind_aab9abbc05e79866a23a5983ea758946a}\label{class_grind_aab9abbc05e79866a23a5983ea758946a}} 
+void {\bfseries On\+Trigger\+Enter} (Collider other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the flower grinding logic and interaction between the mortar and pestle gameobjects.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_grind_a4310df749381d87472b66159dd80a7da}\label{class_grind_a4310df749381d87472b66159dd80a7da}} 
+\index{Grind@{Grind}!GrindFlowers@{GrindFlowers}}
+\index{GrindFlowers@{GrindFlowers}!Grind@{Grind}}
+\doxysubsubsection{\texorpdfstring{GrindFlowers()}{GrindFlowers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Grind.\+Grind\+Flowers (\begin{DoxyParamCaption}\item[{Game\+Object}]{flower }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_grind}{Grind}} logic when there is only one flower in the mortar.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em flower} & the flower to be grinded\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grind_a1e29c952e0dae6c5cae9a9e83ac4e6f0}\label{class_grind_a1e29c952e0dae6c5cae9a9e83ac4e6f0}} 
+\index{Grind@{Grind}!GrindFlowers@{GrindFlowers}}
+\index{GrindFlowers@{GrindFlowers}!Grind@{Grind}}
+\doxysubsubsection{\texorpdfstring{GrindFlowers()}{GrindFlowers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Grind.\+Grind\+Flowers (\begin{DoxyParamCaption}\item[{Game\+Object}]{flower1,  }\item[{Game\+Object}]{flower2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_grind}{Grind}} logic when two flowers in the mortar.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em flower1} & first flower\\
+\hline
+{\em flower2} & second flower\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/Grind.\+cs\end{DoxyCompactItemize}

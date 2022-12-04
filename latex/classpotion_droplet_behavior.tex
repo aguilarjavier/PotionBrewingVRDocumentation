@@ -1,0 +1,98 @@
+\hypertarget{classpotion_droplet_behavior}{}\doxysection{potion\+Droplet\+Behavior Class Reference}
+\label{classpotion_droplet_behavior}\index{potionDropletBehavior@{potionDropletBehavior}}
+
+
+Behavior script to manage the spillage effects to occur upon potion bottle shatter outcome.   
+
+
+Inheritance diagram for potion\+Droplet\+Behavior\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpotion_droplet_behavior}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpotion_droplet_behavior_a1ae66e9fd4c50d7ab90078aea14bcb67}\label{classpotion_droplet_behavior_a1ae66e9fd4c50d7ab90078aea14bcb67}} 
+Audio\+Clip {\bfseries droplet\+Sound}
+\item 
+\mbox{\Hypertarget{classpotion_droplet_behavior_a7745fee7c301c759890f5f4c55ba6a65}\label{classpotion_droplet_behavior_a7745fee7c301c759890f5f4c55ba6a65}} 
+Audio\+Source {\bfseries droplet\+Source}
+\item 
+\mbox{\Hypertarget{classpotion_droplet_behavior_ac7a702767552f389a4a435f88190b719}\label{classpotion_droplet_behavior_ac7a702767552f389a4a435f88190b719}} 
+Rigidbody {\bfseries rigid\+Body}
+\item 
+\mbox{\Hypertarget{classpotion_droplet_behavior_aad1b5f435276bd1f55bdd2d34c1d420a}\label{classpotion_droplet_behavior_aad1b5f435276bd1f55bdd2d34c1d420a}} 
+bool {\bfseries scaled} = false
+\item 
+\mbox{\Hypertarget{classpotion_droplet_behavior_aa4e6ffcfb74461c01749b317a9987edb}\label{classpotion_droplet_behavior_aa4e6ffcfb74461c01749b317a9987edb}} 
+bool {\bfseries played} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpotion_droplet_behavior_a34142c73783aea4bf5b644679b25d02b}\label{classpotion_droplet_behavior_a34142c73783aea4bf5b644679b25d02b}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classpotion_droplet_behavior_af3460641c355e8a8ccd18a8d91e85b01}\label{classpotion_droplet_behavior_af3460641c355e8a8ccd18a8d91e85b01}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{classpotion_droplet_behavior_ace5dfb8be0d4d465635606af5d659062}\label{classpotion_droplet_behavior_ace5dfb8be0d4d465635606af5d659062}} 
+void {\bfseries On\+Collision\+Enter} (Collision collision)
+\item 
+void \mbox{\hyperlink{classpotion_droplet_behavior_adf3fbeef1d2e0a9b61f6978ea364cabe}{merge\+Drops}} (Game\+Object dropA, Game\+Object dropB)
+\begin{DoxyCompactList}\small\item\em Manages the process by which two droplets are to cohesively merge into a single fluid droplet, deciding which remains and which enlarges.  \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classpotion_droplet_behavior_abe2bc595b1ae4104793f699223e883f2}{size\+Sum}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em To be used in the merge\+Droplets() function, performs a summation for the overall size of the droplet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpotion_droplet_behavior_aab930d014e862cb2f68846e6314daac1}\label{classpotion_droplet_behavior_aab930d014e862cb2f68846e6314daac1}} 
+void {\bfseries play\+Impact\+Sound} ()
+\begin{DoxyCompactList}\small\item\em Manages the droplet impact sound and how it should be played.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Behavior script to manage the spillage effects to occur upon potion bottle shatter outcome.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpotion_droplet_behavior_adf3fbeef1d2e0a9b61f6978ea364cabe}\label{classpotion_droplet_behavior_adf3fbeef1d2e0a9b61f6978ea364cabe}} 
+\index{potionDropletBehavior@{potionDropletBehavior}!mergeDrops@{mergeDrops}}
+\index{mergeDrops@{mergeDrops}!potionDropletBehavior@{potionDropletBehavior}}
+\doxysubsubsection{\texorpdfstring{mergeDrops()}{mergeDrops()}}
+{\footnotesize\ttfamily void potion\+Droplet\+Behavior.\+merge\+Drops (\begin{DoxyParamCaption}\item[{Game\+Object}]{dropA,  }\item[{Game\+Object}]{dropB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Manages the process by which two droplets are to cohesively merge into a single fluid droplet, deciding which remains and which enlarges.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em dropA} & The first droplet.\\
+\hline
+{\em dropB} & The second droplet.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpotion_droplet_behavior_abe2bc595b1ae4104793f699223e883f2}\label{classpotion_droplet_behavior_abe2bc595b1ae4104793f699223e883f2}} 
+\index{potionDropletBehavior@{potionDropletBehavior}!sizeSum@{sizeSum}}
+\index{sizeSum@{sizeSum}!potionDropletBehavior@{potionDropletBehavior}}
+\doxysubsubsection{\texorpdfstring{sizeSum()}{sizeSum()}}
+{\footnotesize\ttfamily float potion\+Droplet\+Behavior.\+size\+Sum (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+To be used in the merge\+Droplets() function, performs a summation for the overall size of the droplet. 
+
+Required for determining which droplet should be merged and which droplet should be removed
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The droplet in consideration.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/potion\+Droplet\+Behavior.\+cs\end{DoxyCompactItemize}

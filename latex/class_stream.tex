@@ -1,0 +1,84 @@
+\hypertarget{class_stream}{}\doxysection{Stream Class Reference}
+\label{class_stream}\index{Stream@{Stream}}
+
+
+Controls stream effects and changes color of stream depending on potion color.   
+
+
+Inheritance diagram for Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stream}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stream_a917b75eef0daf82d5e7ed9d858ca25f1}\label{class_stream_a917b75eef0daf82d5e7ed9d858ca25f1}} 
+void {\bfseries Begin} ()
+\begin{DoxyCompactList}\small\item\em Starts pour once bottle is tilted.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stream_ac7bcb9e8f69387add353aff9ea66fb8e}\label{class_stream_ac7bcb9e8f69387add353aff9ea66fb8e}} 
+void {\bfseries End} ()
+\begin{DoxyCompactList}\small\item\em Call end pour function to stop steam from pouring  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stream_a45b5042820c7adf25cecdcc5542839ff}\label{class_stream_a45b5042820c7adf25cecdcc5542839ff}} 
+void {\bfseries Change\+Color} (string color)
+\begin{DoxyCompactList}\small\item\em Read potion color and set stream to tthat same color  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stream_a10e5bf450b568ae99b3ec358fd4a6fc5}\label{class_stream_a10e5bf450b568ae99b3ec358fd4a6fc5}} 
+Color {\bfseries color}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stream_a2b716dd80fcb39dca561e5f93ac48c0c}\label{class_stream_a2b716dd80fcb39dca561e5f93ac48c0c}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_stream_a83830152e1f5f9e87d2a5468039fd609}\label{class_stream_a83830152e1f5f9e87d2a5468039fd609}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_stream_a84a791a1cf9911104c3d417f2ec3ecc9}\label{class_stream_a84a791a1cf9911104c3d417f2ec3ecc9}} 
+IEnumerator {\bfseries Begin\+Pour} ()
+\item 
+\mbox{\Hypertarget{class_stream_aa6d42c0bd7a02491e4bb67858f025161}\label{class_stream_aa6d42c0bd7a02491e4bb67858f025161}} 
+IEnumerator {\bfseries End\+Pour} ()
+\begin{DoxyCompactList}\small\item\em Ends pour if bottle is back to an agle \texorpdfstring{$<$}{<} 45  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stream_a4c6c8525e3bec21b27e484a45ca416a7}\label{class_stream_a4c6c8525e3bec21b27e484a45ca416a7}} 
+Vector3 {\bfseries Find\+End\+Point} ()
+\item 
+\mbox{\Hypertarget{class_stream_a22c2ab97f42ad0ded41ffe9b32633e95}\label{class_stream_a22c2ab97f42ad0ded41ffe9b32633e95}} 
+void {\bfseries Move\+To\+Position} (int index, Vector3 target\+Position)
+\item 
+\mbox{\Hypertarget{class_stream_a0f8d98c1c6de7a6ff35db3fd621f5bb0}\label{class_stream_a0f8d98c1c6de7a6ff35db3fd621f5bb0}} 
+void {\bfseries Animate\+To\+Position} (int index, Vector3 target\+Position)
+\item 
+\mbox{\Hypertarget{class_stream_a0c61196013831dbad22527fa10107014}\label{class_stream_a0c61196013831dbad22527fa10107014}} 
+bool {\bfseries Has\+Reached\+Position} (int index, Vector3 target\+Position)
+\item 
+\mbox{\Hypertarget{class_stream_ae2ef118c2c1dda64c65ab7f55d617c86}\label{class_stream_ae2ef118c2c1dda64c65ab7f55d617c86}} 
+IEnumerator {\bfseries Update\+Particle} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stream_acad6596cd68be98679273629c6b6ba4f}\label{class_stream_acad6596cd68be98679273629c6b6ba4f}} 
+Line\+Renderer {\bfseries line\+Renderer} = null
+\item 
+\mbox{\Hypertarget{class_stream_a6982f0eda55be0be581199431ebbf7d9}\label{class_stream_a6982f0eda55be0be581199431ebbf7d9}} 
+Particle\+System {\bfseries splash\+Particle} = null
+\item 
+\mbox{\Hypertarget{class_stream_a23c77bb2dd2d40f11571e6f8fede0356}\label{class_stream_a23c77bb2dd2d40f11571e6f8fede0356}} 
+Coroutine {\bfseries pour\+Routine} = null
+\item 
+\mbox{\Hypertarget{class_stream_abd5d80522f1c105d203ebf426c1b4e13}\label{class_stream_abd5d80522f1c105d203ebf426c1b4e13}} 
+Vector3 {\bfseries target\+Position} = Vector3.\+zero
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controls stream effects and changes color of stream depending on potion color.  
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/Stream.\+cs\end{DoxyCompactItemize}

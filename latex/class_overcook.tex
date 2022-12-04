@@ -1,0 +1,174 @@
+\hypertarget{class_overcook}{}\doxysection{Overcook Class Reference}
+\label{class_overcook}\index{Overcook@{Overcook}}
+
+
+Changes the material\textquotesingle{}s color and emission color values of the gameobject (potion bottle) when left on the stove or ice pot for too long.   
+
+
+Inheritance diagram for Overcook\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_overcook}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_overcook_a2cf12ec746d3048746e3cac7f729ccaf}\label{class_overcook_a2cf12ec746d3048746e3cac7f729ccaf}} 
+void {\bfseries Overcooking\+On} ()
+\begin{DoxyCompactList}\small\item\em Function Calls \mbox{\hyperlink{class_timer}{Timer}} IEnumerator once overcooking is turned on.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_overcook_ac63db21ea509effc61d7439f16705d6c}\label{class_overcook_ac63db21ea509effc61d7439f16705d6c}} 
+bool {\bfseries overcooking} = false
+\item 
+\mbox{\Hypertarget{class_overcook_af4adbe0f88d75723e7e40dc99cb3735f}\label{class_overcook_af4adbe0f88d75723e7e40dc99cb3735f}} 
+bool {\bfseries On\+Stove}
+\item 
+\mbox{\Hypertarget{class_overcook_ac57b3fa7a61ec39ee2fdb6b73a297947}\label{class_overcook_ac57b3fa7a61ec39ee2fdb6b73a297947}} 
+bool {\bfseries On\+Ice\+Pot}
+\item 
+\mbox{\Hypertarget{class_overcook_a5e4a8bf698867844c737f040b94bef1a}\label{class_overcook_a5e4a8bf698867844c737f040b94bef1a}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries Heating\+Effects}
+\item 
+\mbox{\Hypertarget{class_overcook_a7d43717add3ab62ae200deb35faa545f}\label{class_overcook_a7d43717add3ab62ae200deb35faa545f}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries Freezing\+Effects}
+\item 
+\mbox{\Hypertarget{class_overcook_a4ead8bfa5f1fdb5a54024b2155bea583}\label{class_overcook_a4ead8bfa5f1fdb5a54024b2155bea583}} 
+Audio\+Source {\bfseries Boiling\+Sound}
+\item 
+\mbox{\Hypertarget{class_overcook_a5f2427e1e2427a57cb62fb9ca45874da}\label{class_overcook_a5f2427e1e2427a57cb62fb9ca45874da}} 
+Audio\+Source {\bfseries Freezing\+Sound}
+\item 
+\mbox{\Hypertarget{class_overcook_a36c26d729a1e9936dd329b2f567d289d}\label{class_overcook_a36c26d729a1e9936dd329b2f567d289d}} 
+Game\+Object {\bfseries Snap\+Collider\+Ice}
+\item 
+\mbox{\Hypertarget{class_overcook_ad27cc01b40b3eda7d22f8035c90e8a08}\label{class_overcook_ad27cc01b40b3eda7d22f8035c90e8a08}} 
+Game\+Object {\bfseries Snap\+Collider\+Stove}
+\item 
+\mbox{\Hypertarget{class_overcook_a235eec9286d3a4de49eadf97b740b3bc}\label{class_overcook_a235eec9286d3a4de49eadf97b740b3bc}} 
+Unity\+Event {\bfseries m\+\_\+\+When\+Emission\+Is\+Maxed}
+\item 
+\mbox{\Hypertarget{class_overcook_aa40f31d62b6cf92ec66cbc5a9ccc43cd}\label{class_overcook_aa40f31d62b6cf92ec66cbc5a9ccc43cd}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Glass\+Shards}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_overcook_ae6c63e214b0e41c04a00739cb71e151f}\label{class_overcook_ae6c63e214b0e41c04a00739cb71e151f}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_overcook_a3837a9fee9bf5f35ec12c3ba902f22ce}\label{class_overcook_a3837a9fee9bf5f35ec12c3ba902f22ce}} 
+void {\bfseries Stop\+Effects} ()
+\begin{DoxyCompactList}\small\item\em Stops all particle effects attached to the gameobject (potion bottle).  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overcook_a95d77af54c0bba0d8a3643b7dbcc18df}\label{class_overcook_a95d77af54c0bba0d8a3643b7dbcc18df}} 
+void {\bfseries Update} ()
+\item 
+void \mbox{\hyperlink{class_overcook_a68241a606e9367dc83045bf588297709}{Change\+Glass\+Emission}} (Color color, float intensity)
+\begin{DoxyCompactList}\small\item\em Changes the gameobject\textquotesingle{}s (potion bottle\textquotesingle{}s) Emission Color to a specific color and intensity.  \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_overcook_a4f8eb939238553a4a143d3b01299af89}{Time\+Delay}} ()
+\begin{DoxyCompactList}\small\item\em Incrementially increases/decreases the gameobject\textquotesingle{}s (potion bottle\textquotesingle{}s) Emission Color when it is overcooking.  \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_overcook_a59385159cf2a35be1df6ad1db546b8c0}{Timer}} ()
+\begin{DoxyCompactList}\small\item\em Starts when the thermometer reachs its max value. If gameobject (potion bottle) is still on ice pot or stove after three seconds, starts overcooking.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_overcook_a53c8a568a2ebdfcf216a11b5ee8d819a}\label{class_overcook_a53c8a568a2ebdfcf216a11b5ee8d819a}} 
+Renderer {\bfseries glass\+Rend}
+\item 
+\mbox{\Hypertarget{class_overcook_a89856b676375fb8de9086947fb3dfc43}\label{class_overcook_a89856b676375fb8de9086947fb3dfc43}} 
+Material {\bfseries emissive\+Material}
+\item 
+\mbox{\Hypertarget{class_overcook_a5ac37c7b9807d180c87fd5f094beb2f0}\label{class_overcook_a5ac37c7b9807d180c87fd5f094beb2f0}} 
+int {\bfseries lerp\+Time}
+\item 
+\mbox{\Hypertarget{class_overcook_a2ba3271a1ea7c96debaac0a72d85a41e}\label{class_overcook_a2ba3271a1ea7c96debaac0a72d85a41e}} 
+float {\bfseries m\+\_\+\+Emission\+Rate}
+\item 
+\mbox{\Hypertarget{class_overcook_a6bf33de20cf266f3e2b173fedc403cf0}\label{class_overcook_a6bf33de20cf266f3e2b173fedc403cf0}} 
+float {\bfseries m\+\_\+\+Emission\+Value}
+\item 
+\mbox{\Hypertarget{class_overcook_a237c9c321719fe425f0982adef8174a1}\label{class_overcook_a237c9c321719fe425f0982adef8174a1}} 
+float {\bfseries Max\+Emission}
+\item 
+\mbox{\Hypertarget{class_overcook_a65ab84ee2232c528a81f4e7f24a57c1d}\label{class_overcook_a65ab84ee2232c528a81f4e7f24a57c1d}} 
+Color {\bfseries fire\+Color}
+\item 
+\mbox{\Hypertarget{class_overcook_add77db0e5fafaa2ba4f8693c346f68e7}\label{class_overcook_add77db0e5fafaa2ba4f8693c346f68e7}} 
+Color {\bfseries ice\+Color}
+\item 
+\mbox{\Hypertarget{class_overcook_ae3614e10a5705b8fcbb06f86610e4ca0}\label{class_overcook_ae3614e10a5705b8fcbb06f86610e4ca0}} 
+Color {\bfseries original\+Color}
+\item 
+\mbox{\Hypertarget{class_overcook_afa4c6044bc64c59da519d330a7f3264a}\label{class_overcook_afa4c6044bc64c59da519d330a7f3264a}} 
+Color {\bfseries saved\+Color}
+\item 
+\mbox{\Hypertarget{class_overcook_ab4849fc8bdae422913f082201b99f50f}\label{class_overcook_ab4849fc8bdae422913f082201b99f50f}} 
+bool {\bfseries color\+Saved}
+\item 
+\mbox{\Hypertarget{class_overcook_adf03e7d29118ef9df62249c882250c87}\label{class_overcook_adf03e7d29118ef9df62249c882250c87}} 
+bool {\bfseries was\+On\+Stove}
+\item 
+\mbox{\Hypertarget{class_overcook_ae2c4635ddcecb4dc1ccbfe207c606d55}\label{class_overcook_ae2c4635ddcecb4dc1ccbfe207c606d55}} 
+bool {\bfseries was\+On\+Ice\+Pot}
+\item 
+\mbox{\Hypertarget{class_overcook_ad6174a5e5daf376ce17ec91bdfcc4754}\label{class_overcook_ad6174a5e5daf376ce17ec91bdfcc4754}} 
+float {\bfseries seconds\+Delay} = 0.\+05f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Changes the material\textquotesingle{}s color and emission color values of the gameobject (potion bottle) when left on the stove or ice pot for too long.  
+
+Note\+: Always make sure to keep the Max Emission Value greater than the Emisson Value before starting the game. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_overcook_a68241a606e9367dc83045bf588297709}\label{class_overcook_a68241a606e9367dc83045bf588297709}} 
+\index{Overcook@{Overcook}!ChangeGlassEmission@{ChangeGlassEmission}}
+\index{ChangeGlassEmission@{ChangeGlassEmission}!Overcook@{Overcook}}
+\doxysubsubsection{\texorpdfstring{ChangeGlassEmission()}{ChangeGlassEmission()}}
+{\footnotesize\ttfamily void Overcook.\+Change\+Glass\+Emission (\begin{DoxyParamCaption}\item[{Color}]{color,  }\item[{float}]{intensity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Changes the gameobject\textquotesingle{}s (potion bottle\textquotesingle{}s) Emission Color to a specific color and intensity.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+{\em intensity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_overcook_a4f8eb939238553a4a143d3b01299af89}\label{class_overcook_a4f8eb939238553a4a143d3b01299af89}} 
+\index{Overcook@{Overcook}!TimeDelay@{TimeDelay}}
+\index{TimeDelay@{TimeDelay}!Overcook@{Overcook}}
+\doxysubsubsection{\texorpdfstring{TimeDelay()}{TimeDelay()}}
+{\footnotesize\ttfamily IEnumerator Overcook.\+Time\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Incrementially increases/decreases the gameobject\textquotesingle{}s (potion bottle\textquotesingle{}s) Emission Color when it is overcooking.  
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_overcook_a59385159cf2a35be1df6ad1db546b8c0}\label{class_overcook_a59385159cf2a35be1df6ad1db546b8c0}} 
+\index{Overcook@{Overcook}!Timer@{Timer}}
+\index{Timer@{Timer}!Overcook@{Overcook}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily IEnumerator Overcook.\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Starts when the thermometer reachs its max value. If gameobject (potion bottle) is still on ice pot or stove after three seconds, starts overcooking.  
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/Overcook.\+cs\end{DoxyCompactItemize}

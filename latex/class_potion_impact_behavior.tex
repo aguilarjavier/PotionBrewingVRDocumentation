@@ -1,0 +1,165 @@
+\hypertarget{class_potion_impact_behavior}{}\doxysection{Potion\+Impact\+Behavior Class Reference}
+\label{class_potion_impact_behavior}\index{PotionImpactBehavior@{PotionImpactBehavior}}
+
+
+Manages the operations of potion impact, initiating and managing when breakage occurs in addition to the sounds and fluid droplets   
+
+
+Inheritance diagram for Potion\+Impact\+Behavior\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_potion_impact_behavior}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a134e9c2d8b60b48a88addbf83e5a1904}\label{class_potion_impact_behavior_a134e9c2d8b60b48a88addbf83e5a1904}} 
+void {\bfseries break\+Override} ()
+\begin{DoxyCompactList}\small\item\em Initiates the potion breaking operations, bypassing normal game logic for either testing purposes or external scripts.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a272d31c5d105f6dbe45256a08d065565}\label{class_potion_impact_behavior_a272d31c5d105f6dbe45256a08d065565}} 
+bool {\bfseries break\+Override\+Trigger} = false
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a2a043b562fd992b6bb1528b059b5a166}\label{class_potion_impact_behavior_a2a043b562fd992b6bb1528b059b5a166}} 
+Audio\+Clip\mbox{[}$\,$\mbox{]} {\bfseries sounds}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a72eeb1ade13ce391da7b5687410384a6}\label{class_potion_impact_behavior_a72eeb1ade13ce391da7b5687410384a6}} 
+Audio\+Source {\bfseries bottle\+Source}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_abee6459b4b880ec79f3236b32660b4d9}\label{class_potion_impact_behavior_abee6459b4b880ec79f3236b32660b4d9}} 
+int {\bfseries counter} = 0
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a22f9432f0249529afc02d6092ef09ca6}\label{class_potion_impact_behavior_a22f9432f0249529afc02d6092ef09ca6}} 
+Mesh\+Renderer {\bfseries bottle}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_afc517cc8d17359d72ec03c74ece92d6c}\label{class_potion_impact_behavior_afc517cc8d17359d72ec03c74ece92d6c}} 
+Game\+Object {\bfseries liquids}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a84b81076ff81eccc5ee0921b4315d128}\label{class_potion_impact_behavior_a84b81076ff81eccc5ee0921b4315d128}} 
+Game\+Object {\bfseries effects}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a3d5801387815227dd8725ed3465c26c8}\label{class_potion_impact_behavior_a3d5801387815227dd8725ed3465c26c8}} 
+float {\bfseries integrity} = 10.\+0f
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_ac807b93d52209a4c563382ade68da73e}\label{class_potion_impact_behavior_ac807b93d52209a4c563382ade68da73e}} 
+string {\bfseries floor\+Name}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_ac9043d8e5059f9350557b1053a2f691a}\label{class_potion_impact_behavior_ac9043d8e5059f9350557b1053a2f691a}} 
+bool {\bfseries toggle\+Integrity\+Function} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a4f521ae14b2e86902db6976d568897c8}\label{class_potion_impact_behavior_a4f521ae14b2e86902db6976d568897c8}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a53e3a602959c1f3197a185b897d843e6}\label{class_potion_impact_behavior_a53e3a602959c1f3197a185b897d843e6}} 
+void {\bfseries Update} ()
+\item 
+void \mbox{\hyperlink{class_potion_impact_behavior_a20ad0db98fccc956a3965f62887e39ca}{check\+Break\+Override}} ()
+\begin{DoxyCompactList}\small\item\em Wrapper function to simplify the process of checking if break\+Override\+Trigger is true or false. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_ae34ad90e0583ef493bf163541b3b18f8}\label{class_potion_impact_behavior_ae34ad90e0583ef493bf163541b3b18f8}} 
+void {\bfseries On\+Collision\+Enter} (Collision c)
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a769cf4942f3720539efd5d5122803a69}\label{class_potion_impact_behavior_a769cf4942f3720539efd5d5122803a69}} 
+void {\bfseries vanish\+Components} ()
+\begin{DoxyCompactList}\small\item\em Initiates the process of vanishing the components of the previous bottle model, such that only the broken potion pieces are visible.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_potion_impact_behavior_ab0944a50287f4c377c0b31d9ca60b66d}{detect\+Break}} (Collision c)
+\begin{DoxyCompactList}\small\item\em Detects whether or not a break should happen given the current game status.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_aa1813840ca584c436072d201e212b1f3}\label{class_potion_impact_behavior_aa1813840ca584c436072d201e212b1f3}} 
+void {\bfseries bottle\+Sound\+Logic} ()
+\begin{DoxyCompactList}\small\item\em Manages the sound effects of the bottle impacts, playing the appropriate sounds at the appropriate time.  \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_potion_impact_behavior_afa110b654d09735b621f576fce10ebf1}{time\+Destroy\+Object}} (int seconds)
+\begin{DoxyCompactList}\small\item\em Properly times the process of destroying the object, synchronizing the animation.  \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_potion_impact_behavior_a7c31b31ba677add67fdcbde11639bd87}{display\+Integrity}} (int ms)
+\begin{DoxyCompactList}\small\item\em Properly times the process of displaying the damage indicator, synchronizing the animation.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_ab420a4b86d794a5c9bc3adb463473264}\label{class_potion_impact_behavior_ab420a4b86d794a5c9bc3adb463473264}} 
+Game\+Object {\bfseries integrity\+Counter\+Object}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a76fb929aa41317dd7027d198f13f0175}\label{class_potion_impact_behavior_a76fb929aa41317dd7027d198f13f0175}} 
+Text\+Mesh\+Pro {\bfseries integrity\+Counter}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a72b10c9cc57db79e0306cdb0e4ec81a1}\label{class_potion_impact_behavior_a72b10c9cc57db79e0306cdb0e4ec81a1}} 
+float {\bfseries initial\+Text\+Pos}
+\item 
+\mbox{\Hypertarget{class_potion_impact_behavior_a3126e689219df4638308ca494fc8039c}\label{class_potion_impact_behavior_a3126e689219df4638308ca494fc8039c}} 
+bool {\bfseries broken}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the operations of potion impact, initiating and managing when breakage occurs in addition to the sounds and fluid droplets  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_potion_impact_behavior_a20ad0db98fccc956a3965f62887e39ca}\label{class_potion_impact_behavior_a20ad0db98fccc956a3965f62887e39ca}} 
+\index{PotionImpactBehavior@{PotionImpactBehavior}!checkBreakOverride@{checkBreakOverride}}
+\index{checkBreakOverride@{checkBreakOverride}!PotionImpactBehavior@{PotionImpactBehavior}}
+\doxysubsubsection{\texorpdfstring{checkBreakOverride()}{checkBreakOverride()}}
+{\footnotesize\ttfamily void Potion\+Impact\+Behavior.\+check\+Break\+Override (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wrapper function to simplify the process of checking if break\+Override\+Trigger is true or false. 
+
+\mbox{\Hypertarget{class_potion_impact_behavior_ab0944a50287f4c377c0b31d9ca60b66d}\label{class_potion_impact_behavior_ab0944a50287f4c377c0b31d9ca60b66d}} 
+\index{PotionImpactBehavior@{PotionImpactBehavior}!detectBreak@{detectBreak}}
+\index{detectBreak@{detectBreak}!PotionImpactBehavior@{PotionImpactBehavior}}
+\doxysubsubsection{\texorpdfstring{detectBreak()}{detectBreak()}}
+{\footnotesize\ttfamily void Potion\+Impact\+Behavior.\+detect\+Break (\begin{DoxyParamCaption}\item[{Collision}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Detects whether or not a break should happen given the current game status.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the collision object\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_potion_impact_behavior_a7c31b31ba677add67fdcbde11639bd87}\label{class_potion_impact_behavior_a7c31b31ba677add67fdcbde11639bd87}} 
+\index{PotionImpactBehavior@{PotionImpactBehavior}!displayIntegrity@{displayIntegrity}}
+\index{displayIntegrity@{displayIntegrity}!PotionImpactBehavior@{PotionImpactBehavior}}
+\doxysubsubsection{\texorpdfstring{displayIntegrity()}{displayIntegrity()}}
+{\footnotesize\ttfamily IEnumerator Potion\+Impact\+Behavior.\+display\+Integrity (\begin{DoxyParamCaption}\item[{int}]{ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Properly times the process of displaying the damage indicator, synchronizing the animation.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em ms} & How long the animation should proceed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_potion_impact_behavior_afa110b654d09735b621f576fce10ebf1}\label{class_potion_impact_behavior_afa110b654d09735b621f576fce10ebf1}} 
+\index{PotionImpactBehavior@{PotionImpactBehavior}!timeDestroyObject@{timeDestroyObject}}
+\index{timeDestroyObject@{timeDestroyObject}!PotionImpactBehavior@{PotionImpactBehavior}}
+\doxysubsubsection{\texorpdfstring{timeDestroyObject()}{timeDestroyObject()}}
+{\footnotesize\ttfamily IEnumerator Potion\+Impact\+Behavior.\+time\+Destroy\+Object (\begin{DoxyParamCaption}\item[{int}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Properly times the process of destroying the object, synchronizing the animation.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & How many seconds for the animation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/Potion\+Impact\+Behavior.\+cs\end{DoxyCompactItemize}

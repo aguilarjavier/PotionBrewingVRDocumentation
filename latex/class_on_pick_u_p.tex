@@ -1,0 +1,61 @@
+\hypertarget{class_on_pick_u_p}{}\doxysection{On\+Pick\+UP Class Reference}
+\label{class_on_pick_u_p}\index{OnPickUP@{OnPickUP}}
+
+
+Called when the user picks up any of the spawned in objects like flowers, or potions. These prefabs that are instantiated have a catching speed of 0. This causes the hand to instantly \char`\"{}catch it\char`\"{} after its spawned. After half a second its catching speed is then set to -\/1 (the default for interactables) to avoid any strange behavior.   
+
+
+Inheritance diagram for On\+Pick\+UP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_on_pick_u_p}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_on_pick_u_p_ae50d29f8e917d275171ac7af0b614e8c}\label{class_on_pick_u_p_ae50d29f8e917d275171ac7af0b614e8c}} 
+IEnumerator {\bfseries Wait1\+Second} ()
+\begin{DoxyCompactList}\small\item\em Waits half a second before calling Set\+Catching\+Speed(-\/1).  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_on_pick_u_p_a0f0bcc416aff150fc3021c11554d24c0}{Set\+Catching\+Speed}} (int i)
+\begin{DoxyCompactList}\small\item\em Sets the catching speed of an interactable to a set amount.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_on_pick_u_p_a159d5dcc624e995123ebe50a1131e380}\label{class_on_pick_u_p_a159d5dcc624e995123ebe50a1131e380}} 
+void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_on_pick_u_p_af222a6562cc56ba0606702ae5f58f91f}\label{class_on_pick_u_p_af222a6562cc56ba0606702ae5f58f91f}} 
+Throwable {\bfseries throwable}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Called when the user picks up any of the spawned in objects like flowers, or potions. These prefabs that are instantiated have a catching speed of 0. This causes the hand to instantly \char`\"{}catch it\char`\"{} after its spawned. After half a second its catching speed is then set to -\/1 (the default for interactables) to avoid any strange behavior.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_on_pick_u_p_a0f0bcc416aff150fc3021c11554d24c0}\label{class_on_pick_u_p_a0f0bcc416aff150fc3021c11554d24c0}} 
+\index{OnPickUP@{OnPickUP}!SetCatchingSpeed@{SetCatchingSpeed}}
+\index{SetCatchingSpeed@{SetCatchingSpeed}!OnPickUP@{OnPickUP}}
+\doxysubsubsection{\texorpdfstring{SetCatchingSpeed()}{SetCatchingSpeed()}}
+{\footnotesize\ttfamily void On\+Pick\+UP.\+Set\+Catching\+Speed (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Sets the catching speed of an interactable to a set amount.  
+
+-\/1 is the default catching speed of an interactable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/On\+Pick\+UP.\+cs\end{DoxyCompactItemize}

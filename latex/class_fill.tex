@@ -1,0 +1,96 @@
+\hypertarget{class_fill}{}\doxysection{Fill Class Reference}
+\label{class_fill}\index{Fill@{Fill}}
+
+
+Control fill value in thermomether. Check when it starts filling and when it stops.   
+
+
+Inheritance diagram for Fill\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fill}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fill_a2a48a31c91ab999449943da68c7f8262}\label{class_fill_a2a48a31c91ab999449943da68c7f8262}} 
+void {\bfseries Fill\+Start} ()
+\begin{DoxyCompactList}\small\item\em Calls function that starts fill.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fill_a188a323eb065a1b1f70e6b8071b41a07}\label{class_fill_a188a323eb065a1b1f70e6b8071b41a07}} 
+void {\bfseries set\+Icon} ()
+\begin{DoxyCompactList}\small\item\em Sets Icon to potion bottle, fire or ice, once the thermomether reaches max value.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fill_a1df54b24a9f0cf8b96109275c9cdf9ae}\label{class_fill_a1df54b24a9f0cf8b96109275c9cdf9ae}} 
+Game\+Object {\bfseries Start\+Light}
+\item 
+\mbox{\Hypertarget{class_fill_a00f732aecb35d9eeb21b28aeae57107d}\label{class_fill_a00f732aecb35d9eeb21b28aeae57107d}} 
+Game\+Object {\bfseries End\+Light}
+\item 
+\mbox{\Hypertarget{class_fill_a7e8db78c6bb28e1f7357552b2f345e8b}\label{class_fill_a7e8db78c6bb28e1f7357552b2f345e8b}} 
+Game\+Object {\bfseries Snap\+Collider}
+\item 
+\mbox{\Hypertarget{class_fill_a87224605851ec87c6cdcd582bdaf409b}\label{class_fill_a87224605851ec87c6cdcd582bdaf409b}} 
+bool {\bfseries snapped}
+\item 
+\mbox{\Hypertarget{class_fill_a8d4cb5a39fba5ab029650c13f198aae4}\label{class_fill_a8d4cb5a39fba5ab029650c13f198aae4}} 
+Game\+Object {\bfseries m\+\_\+\+Potion\+Tray}
+\item 
+\mbox{\Hypertarget{class_fill_a2790a613696596f5d16dcf05d9a1e3b2}\label{class_fill_a2790a613696596f5d16dcf05d9a1e3b2}} 
+Game\+Object {\bfseries m\+\_\+\+Spawned\+Potion}
+\item 
+\mbox{\Hypertarget{class_fill_ad4b29bc7089797a1a2c4fe3502878fd8}\label{class_fill_ad4b29bc7089797a1a2c4fe3502878fd8}} 
+Audio\+Source {\bfseries m\+\_\+\+Charge\+Sound}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fill_aa275d2c788952404dc02e98be2afa44c}\label{class_fill_aa275d2c788952404dc02e98be2afa44c}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_fill_a7605bf1cd3016d25763f4acd469a755d}\label{class_fill_a7605bf1cd3016d25763f4acd469a755d}} 
+void {\bfseries Update} ()
+\item 
+IEnumerator \mbox{\hyperlink{class_fill_a0e5b8dd8af544872823aee63070c1a7e}{Start\+Fill}} ()
+\begin{DoxyCompactList}\small\item\em Starts fill value once bottle is snapped on ice or stove Increments the fill value until it reaches maximum Added sound effect as thermomether is filling.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fill_aad283435437fede5a71c37cd0378f414}\label{class_fill_aad283435437fede5a71c37cd0378f414}} 
+Renderer {\bfseries rend}
+\item 
+\mbox{\Hypertarget{class_fill_a8a3bd0cb2f10e417d1d85fba973ee578}\label{class_fill_a8a3bd0cb2f10e417d1d85fba973ee578}} 
+float {\bfseries fill}
+\item 
+\mbox{\Hypertarget{class_fill_ae17e6e9a927a3eed3166f4271cb3b9ad}\label{class_fill_ae17e6e9a927a3eed3166f4271cb3b9ad}} 
+bool {\bfseries potion\+Found}
+\item 
+\mbox{\Hypertarget{class_fill_a8feb90d15223c33ca9eefd6bf61167a3}\label{class_fill_a8feb90d15223c33ca9eefd6bf61167a3}} 
+Unity\+Event {\bfseries m\+\_\+\+When\+Fill\+Completes}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Control fill value in thermomether. Check when it starts filling and when it stops.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fill_a0e5b8dd8af544872823aee63070c1a7e}\label{class_fill_a0e5b8dd8af544872823aee63070c1a7e}} 
+\index{Fill@{Fill}!StartFill@{StartFill}}
+\index{StartFill@{StartFill}!Fill@{Fill}}
+\doxysubsubsection{\texorpdfstring{StartFill()}{StartFill()}}
+{\footnotesize\ttfamily IEnumerator Fill.\+Start\+Fill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Starts fill value once bottle is snapped on ice or stove Increments the fill value until it reaches maximum Added sound effect as thermomether is filling.  
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/javie/\+Documents/\+School/\+CAP6117/\+Potion\+Brewing\+VR/\+Assets/\+Scripts/Fill.\+cs\end{DoxyCompactItemize}
