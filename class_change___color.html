@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PotionBrewingVR<span id="projectnumber">&#160;.9</span>
+   <div id="projectname">PotionBrewingVR<span id="projectnumber">&#160;1.0</span>
    </div>
   </td>
  </tr>
@@ -77,6 +77,9 @@ $(function() {
   <div class="headertitle"><div class="title">Change_Color Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class that contains the logic to change the colors of active potions.   
+ <a href="class_change___color.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Change_Color:</div>
 <div class="dyncontent">
@@ -98,11 +101,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ae21628428c89c313c49f183339f0f4c4"><td class="memItemLeft" align="right" valign="top"><a id="ae21628428c89c313c49f183339f0f4c4" name="ae21628428c89c313c49f183339f0f4c4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:ae21628428c89c313c49f183339f0f4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b681c05c7ea036d18cfbf92dba81ca"><td class="memItemLeft" align="right" valign="top"><a id="a51b681c05c7ea036d18cfbf92dba81ca" name="a51b681c05c7ea036d18cfbf92dba81ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeColor</b> (string color)</td></tr>
+<tr class="memitem:a51b681c05c7ea036d18cfbf92dba81ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_change___color.html#a51b681c05c7ea036d18cfbf92dba81ca">ChangeColor</a> (string color)</td></tr>
+<tr class="memdesc:a51b681c05c7ea036d18cfbf92dba81ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the color of the potion in the scene based on the string given.   <a href="class_change___color.html#a51b681c05c7ea036d18cfbf92dba81ca">More...</a><br /></td></tr>
 <tr class="separator:a51b681c05c7ea036d18cfbf92dba81ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb1ce926b27f4abb159cdc244351fc07"><td class="memItemLeft" align="right" valign="top"><a id="adb1ce926b27f4abb159cdc244351fc07" name="adb1ce926b27f4abb159cdc244351fc07"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTriggerEnter</b> (Collider powder)</td></tr>
+<tr class="memitem:adb1ce926b27f4abb159cdc244351fc07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_change___color.html#adb1ce926b27f4abb159cdc244351fc07">OnTriggerEnter</a> (Collider powder)</td></tr>
+<tr class="memdesc:adb1ce926b27f4abb159cdc244351fc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects collision of powder onto potion. Changes potion based on powder color.   <a href="class_change___color.html#adb1ce926b27f4abb159cdc244351fc07">More...</a><br /></td></tr>
 <tr class="separator:adb1ce926b27f4abb159cdc244351fc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -141,6 +144,77 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>activeBottle</b> = 0</
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>halfColor</b></td></tr>
 <tr class="separator:aed67b4d72a31855da97efc04ab36be0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class that contains the logic to change the colors of active potions.  </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a51b681c05c7ea036d18cfbf92dba81ca" name="a51b681c05c7ea036d18cfbf92dba81ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b681c05c7ea036d18cfbf92dba81ca">&#9670;&#160;</a></span>ChangeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Change_Color.ChangeColor </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the color of the potion in the scene based on the string given.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Color to change the potion to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb1ce926b27f4abb159cdc244351fc07" name="adb1ce926b27f4abb159cdc244351fc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb1ce926b27f4abb159cdc244351fc07">&#9670;&#160;</a></span>OnTriggerEnter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Change_Color.OnTriggerEnter </td>
+          <td>(</td>
+          <td class="paramtype">Collider&#160;</td>
+          <td class="paramname"><em>powder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detects collision of powder onto potion. Changes potion based on powder color.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">powder</td><td>Powder active in spoon.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/javie/Documents/School/CAP6117/PotionBrewingVR/Assets/Scripts/Change_Color.cs</li>
 </ul>

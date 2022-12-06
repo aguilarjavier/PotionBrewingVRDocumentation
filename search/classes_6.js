@@ -12,6 +12,5 @@ var searchData=
   ['potionvalues_9',['PotionValues',['../class_potion_values.html',1,'']]],
   ['pourdetector_10',['PourDetector',['../class_pour_detector.html',1,'']]],
   ['powdercount_11',['PowderCount',['../class_powder_count.html',1,'']]],
-  ['progresscount_12',['ProgressCount',['../class_progress_count.html',1,'']]],
-  ['progresssnap_13',['ProgressSnap',['../class_progress_snap.html',1,'']]]
+  ['progresssnap_12',['ProgressSnap',['../class_progress_snap.html',1,'']]]
 ];
